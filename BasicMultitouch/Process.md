@@ -24,3 +24,7 @@ The result of the commandline:
 Generating 4,096 bit RSA key pair and self-signed certificate (SHA256withRSA) with a validity of 10,000 days
 for: CN=Android Coding, OU=IT, O=12H1r, L=Kapfenberg, ST=Styria, C=AT
 [Storing C:\Users\dbregovic\AndroidStudioProjects\Keystore\command_prompt.jks]
+
+**What caught our eye at github actions and the Android CI**
+Here we are setting up the project and building it but to be a CD pipeline we need an artifact that we can doploy somewhere.
+
