@@ -43,11 +43,18 @@ List<String> dirs = [
 android {
     compileSdkVersion 30
 
+    lintOptions {
+        quiet true
+        checkReleaseBuilds false
+        //If you want to continue even if errors found use following line
+        abortOnError false
+    }
+
     signingConfigs {
         debug {
             storeFile file('C:\\Users\\dbregovic\\AndroidStudioProjects\\Keystore\\android_studio.jks')
-            storePassword findProperty('123456')
-            keyPassword findProperty('123456')
+            storePassword findProperty('storePassword')
+            keyPassword findProperty('keyPassword')
             keyAlias 'key0'
         }
         release {
