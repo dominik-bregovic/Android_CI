@@ -43,6 +43,6 @@ jobs:
           echo "${{secrets.ANDROID_KEYSTORE_PASSPHRASE}}" > keystore.asc
           mkdir Application/keystore
           mv keystore.asc Application/keystore/keystore.asc
-          gpg -d --passphrase "${{secrets.ANDROID_KEYSTORE}}" --batch Application/keystore/keystore.asc > Application/keystore/keystore.jks
+          #gpg -d --passphrase "${{secrets.ANDROID_KEYSTORE}}" --batch Application/keystore/keystore.asc > Application/keystore/keystore.jks
           #echo "storePassword=${{secrets.ANDROID_KEYSTORE_PASSPHRASE}}" >> gradle.properties
           #echo "keyPassword=${{secrets.ANDROID_KEYSTORE_PASSPHRASE}}" >> gradle.properties
